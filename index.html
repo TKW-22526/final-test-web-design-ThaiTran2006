@@ -2,19 +2,64 @@
 <html lang="vi">
 <head>
     <meta charset="UTF-8">
-    <title>Dự án web với HTML, CSS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thế Giới LEGO - Trang Chủ</title>
+    <!-- Đường dẫn vào thư mục css -->
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/style6.css">
-     <script src="libpage6.js"></script>
-    <script src="libdetailpage6.js"></script>
 </head>
 <body>
+    <header>
+        <nav class="navbar">
+            <div class="logo"><a href="index.html">LEGO SHOP</a></div>
+            <ul class="nav-links">
+                <!-- Đứng ở index.html đi vào thư mục html/ để gọi các trang khác -->
+                <li><a href="index.html" class="active">Trang Chủ</a></li>
+                <li><a href="html/gioi-thieu.html">Giới Thiệu</a></li>
+                <li><a href="html/lien-he.html">Liên Hệ</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <ul>
-        <li>
-            <a href="html/page6.html" target="_blank">lego</a>
-        </li>
-    </ul>
+    <main>
+        <h2>Mô Hình LEGO Mới Nhất</h2>
+        <div class="product-grid">
+            <!-- Sản phẩm 1 -->
+            <div class="product-card">
+                <div class="product-img">LEGO Star Wars</div>
+                <h3>LEGO Star Wars Millennium Falcon</h3>
+                <p class="price">2.500.000 đ</p>
+                <!-- Đi vào thư mục html để xem chi tiết -->
+                <a href="html/chi-tiet.html" class="btn">Xem chi tiết</a>
+            </div>
+            <!-- Sản phẩm 2 -->
+            <div class="product-card">
+                <div class="product-img">LEGO City</div>
+                <h3>LEGO City Trạm Cảnh Sát Biển</h3>
+                <p class="price">1.200.000 đ</p>
+                <a href="html/chi-tiet.html" class="btn">Xem chi tiết</a>
+            </div>
+            <!-- Sản phẩm 3 -->
+            <div class="product-card">
+                <div class="product-img">LEGO Technic</div>
+                <h3>LEGO Technic Siêu Xe Ferrari</h3>
+                <p class="price">4.800.000 đ</p>
+                <a href="html/chi-tiet.html" class="btn">Xem chi tiết</a>
+            </div>
+            <!-- Sản phẩm 4 -->
+            <div class="product-card">
+                <div class="product-img">LEGO Creator</div>
+                <h3>LEGO Creator Tòa Nhà Cổ Điển</h3>
+                <p class="price">3.100.000 đ</p>
+                <a href="html/chi-tiet.html" class="btn">Xem chi tiết</a>
+            </div>
+        </div>
+    </main>
 
+    <footer>
+        <p>&copy; 2026 Cửa Hàng LEGO - Đồ Chơi Sáng Tạo.</p>
+    </footer>
+
+    <!-- Đường dẫn vào thư mục js -->
+    <script src="js/script.js"></script>
 </body>
 </html>
